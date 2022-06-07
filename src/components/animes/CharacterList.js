@@ -75,12 +75,12 @@ const CharacterList = () => {
         <input type="text" name='searchTerm'className="form-control" aria-label="Text input with dropdown button" placeholder='Character Name...' value={filters.searchTerm} onChange={handleChange} />
       </div> */}
 
-      <div className="col-xs-2 mb-5 mt-4">
-        <select className='form-select mb-1 mw-2' aria-label='Default select example' name='gender' value={filters.gender} onChange={handleChange}>
+      <div className="col-xs-2 mb-5 mt-4 w-50">
+        <select className='form-select mb-1 mw-2 w-50' aria-label='Default select example' name='gender' value={filters.gender} onChange={handleChange}>
           <option value ='All'>All</option>
           {genders.map(gender => <option className='dropdown-item' key={gender} value={gender}>{gender}</option>)}
         </select>
-        <input className='form-control' id='ex-2' type='text' name='searchTerm' placeholder='🍔Burger Name...' value={filters.searchTerm} onChange={handleChange} />
+        <input className='form-control w-50' id='ex-2' type='text' name='searchTerm' placeholder='🍔Burger Name...' value={filters.searchTerm} onChange={handleChange} />
       </div>
       <Row>
         {(filteredCharacters.length ? filteredCharacters : animes).map(anime => {
