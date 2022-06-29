@@ -1,20 +1,72 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) GA London React Template
+# Project 2 - Bob's Burger 🍔
 
-## Using NPM
+A pair programming project. Building a React app that receives a third-party API.
 
-`yarn start` or `yarn dev`  to run the development server
+## Project Overview
 
-`yarn build` to create a build directory
+The React app had to built within 1,5 days (hackathon) and must display information taken from a third-party API.
 
-## Using Yarn
+We decided to create an app that serves as a Wikipedia for the Bob's Burger cartoon, using their API.
 
-`yarn start` or `yarn dev`  to run the development server
+## Technologies/Languages Used
 
-`yarn build` to create a build directory
+- HTML5
+- CSS3
+- SASS
+- Bootstrap
+- JavaScript ES6+
+- React
+- Axios
+- Yarn
+- NPM
+- Git
+- GitHub
 
-### ⚠️
+<img width="1512" alt="Screen Shot 2022-06-30 at 12 25 59 AM" src="https://user-images.githubusercontent.com/103049873/176547726-eeefcc9d-3267-4411-975b-fbdb04b7184d.png">
 
-To prevent the `failed-to-compile` issue for linter errors like `no-unsed-vars`, rename the `.env.example` to `.env` and restart your development server. Note this will only change the behaviour of certain linter errors to now be warnings, and is added just to allow your code to compile in development. These errors should still be fixed and other errors will still result in the code being unable to compile
+## Planning
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+We began by discussing a quick plan. We knew we wanted to create something fun, and spent a little while trying to find a good free API to use. This proved to be fairly difficult. Once we settled on using the Bob's Burger API we decided on which features to include. We knew we wanted a live search bar.
+
+## The Build
+
+As we were using a third-party API, we used Axios to serve our front-end. 
+
+In order to display all the information for each respective artist on the page, 'dot notation' is used. In addition, a `.map()` is used to iterate through each character in the list.
+
+## Search Feature
+
+The search filter on each page was implementing using a combination of useState and useEffect, where when the value of the text input box changed, we would update the filters state, then use this to create a filtered array.
+
+Within this handleChange() function below, while we could have achieved the same result with simiply `setFilters(e.target.value)`, we set the state as an object to keep the door open for additional filtering options in the future.
+
+Once we defined the filter state, we filtered the array we fetched from the API uisng RegExp, allowing us to only display recipes that meet the search term.
+
+<img width="855" alt="Screen Shot 2022-06-30 at 12 52 48 AM" src="https://user-images.githubusercontent.com/103049873/176551794-853b60b7-5d29-4cd6-b86a-34abf0d63f4c.png">
+
+
+Users are simply able to type in their desired character and the page will display a profile picture, ocuppation, the voice over actor and their first apperance on the show. 
+
+For further informations about the character the user can press the "Wiki" button which is going to take him to a dedicated web page just for that character. 
+
+<img width="1512" alt="Screen Shot 2022-06-30 at 12 39 21 AM" src="https://user-images.githubusercontent.com/103049873/176549795-c5f54b09-b33f-4441-a3ff-09fd45229947.png">
+
+<img width="1512" alt="Screen Shot 2022-06-30 at 12 27 29 AM" src="https://user-images.githubusercontent.com/103049873/176547949-1dd60496-725f-4d1c-9c76-fcf3f18e7be4.png">
+
+
+## Wins
+
+- Getting data successfully to display on our page with Axios was of course a huge win as this provides the core functionality of the app.
+- I think implementing the user search bar with an `onChange={function}` was definitely a fun problem to solve.
+- Getting the project done in under 36 hours. 
+
+## Challenges
+
+- Our main issue was finding a good free API. As that took us half a day we were behind the schedule with the planning and coding. 
+
+## Key Learning Points
+
+- Axios: As this was both our first project using Axios to receive data from an API, it was crucial to practice and get to know how to use it. We enjoyed working out how render information on the page with using this.
+- Team Communication: Building on teamwork skills was definitely another key-learning point. It was great practice being able to communicate changes to code, what needed to be completed and just conversing with each other, talking through problems that had arisen during the build!
+
 
