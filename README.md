@@ -36,6 +36,13 @@ As we were using a third-party API, we used Axios to serve our front-end.
 
 In order to display all the information for each respective artist on the page, 'dot notation' is used. In addition, a `.map()` is used to iterate through each character in the list.
 
+## Home Page
+
+Character Index Once landing on the Character Index page, an async function will run. This code block has been sectioned with a try/catch statement and will await the promise from axios, then set the data in state. This then allows us to cherry pick or manipulate the data which we draw from the API, and in this instance we are requesting for the characters to be returned.
+
+<img width="485" alt="175278046-bac132c2-c4fa-4333-adb6-185fb02eae4d" src="https://user-images.githubusercontent.com/103049873/178732713-6576b0ea-4293-4c16-ad8f-5502855b4eac.png">
+
+
 ## Search Feature
 
 The search filter on each page was implementing using a combination of useState and useEffect, where when the value of the text input box changed, we would update the filters state, then use this to create a filtered array.
