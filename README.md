@@ -26,6 +26,8 @@ We decided to create an app that serves as a Wikipedia for the Bob's Burger cart
 
 ## Planning
 
+<img width="788" alt="175276237-b6ea2d98-552c-4e8e-a8e8-1f8e296ce61d" src="https://user-images.githubusercontent.com/103049873/178732235-c53e983b-0d9c-412e-9990-fca28d679456.png">
+
 We began by discussing a quick plan. We knew we wanted to create something fun, and spent a little while trying to find a good free API to use. This proved to be fairly difficult. Once we settled on using the Bob's Burger API we decided on which features to include. We knew we wanted a live search bar.
 
 ## The Build
