@@ -2,6 +2,8 @@
 
 A pair programming project. Building a React app that receives a third-party API.
 
+[Deployed Project](https://isnt-justingrant94-awesome.netlify.app/)
+
 ## Project Overview
 
 The React app had to built within 1,5 days (hackathon) and must display information taken from a third-party API.
